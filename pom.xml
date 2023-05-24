@@ -16,7 +16,6 @@
     <encoding>UTF-8</encoding>
     <tags></tags>
     <webdriver.base.url></webdriver.base.url>
-    <maven.plugin.validation>DEFAULT</maven.plugin.validation>
   </properties>
 
   <dependencies>
