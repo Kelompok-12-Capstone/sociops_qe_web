@@ -1,1 +1,7 @@
+starter\pages\FundPage.class
+starter\CucumberTestSuite.class
+starter\pages\ManageNewsPage.class
+starter\pages\LoginPage.class
+starter\stepdefinitions\fundaraisingStep.class
+starter\stepdefinitions\manageNewsStep.class
 capstone\AppTest.class
