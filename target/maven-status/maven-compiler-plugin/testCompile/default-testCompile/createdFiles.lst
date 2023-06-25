@@ -1,1 +1,5 @@
 starter\CucumberTestSuite.class
+starter\pages\LandingPage.class
+starter\stepdefinitions\ManageCustomers.class
+starter\stepdefinitions\LoginSteps.class
+starter\pages\Dashboard.class
