@@ -1,1 +1,3 @@
 starter\CucumberTestSuite.class
+starter\pages\VolunteerPage.class
+starter\stepdefinition\Volunteersteps.class
