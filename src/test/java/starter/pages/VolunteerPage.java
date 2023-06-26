@@ -30,6 +30,36 @@ public class VolunteerPage extends PageObject {
 
     ///
 
+
+    private By detailButton() {
+        return By.xpath("//tbody/tr[1]/td[5]/button[1]");
+    }
+
+    private By detailProgramField() {
+        return By.xpath("//div[contains(text(),'Detail Program')]");
+    }
+
+    ///
+
+    private By videoPromosiField() {
+        return By.xpath("//button[contains(text(),'tekan untuk melihat video')]");
+    }
+
+    ///
+
+    private By diTerimaButton(){
+        return By.xpath("I click diterima field to accept program");
+    }
+    ///
+
+    ///
+
+    private By diTolakButton() {
+        return By.xpath("I click ditolak field to reject program");
+    }
+
+    //
+
     private By clickListProgramField0() {
         return By.xpath("//body/div[2]/div[1]/div[2]/main[1]/div[1]/div[1]/div[1]/a[2]");
     }
@@ -76,6 +106,39 @@ public class VolunteerPage extends PageObject {
     }
 
     ///
+
+    @Step("I click detail field")
+    public void clickDetailField() {
+        $(detailButton()).click();
+    }
+
+    @Step("I on the detail permintaan pengajuan page")
+    public boolean validateOnTheDetailPermintaanPengajuanPage() {
+        return $(detailProgramField()).isDisplayed();
+    }
+
+    ///
+
+    @Step("I click video promosi field to see video")
+    public void clickVideoPromosiFieldToSeeVideo() {
+        $(videoPromosiField()).click();
+    }
+
+    ///
+
+    @Step("I click diterima field to accept program")
+    public void clickDiTerimaFieldToAcceptProgram() {
+        $(diTerimaButton()).click();
+    }
+
+    ///
+
+    @Step("I click ditolak field to reject program")
+    public void clickDiTolakFieldToRejectProgram() {
+        $(diTolakButton()).click();
+    }
+
+    //
 
     @Step("I click list program field")
     public void clickListProgramField() {

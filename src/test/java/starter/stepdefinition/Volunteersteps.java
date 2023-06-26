@@ -38,6 +38,39 @@ public class Volunteersteps {
 
     ///
 
+    @And("I click detail field")
+    public void clickDetailField() {
+        volunteerPage.clickDetailField();
+    }
+
+    @Then("I on the detail permintaan pengajuan page")
+    public void onTheDetailPermintaanPengajuanPage() {
+        volunteerPage.validateOnTheDetailPermintaanPengajuanPage();
+    }
+
+    ///
+
+    @And("I click video promosi field to see video")
+    public void clickVideoPromosiFieldToSeeVideo() {
+        volunteerPage.clickVideoPromosiFieldToSeeVideo();
+    }
+
+    ///
+
+    @And("I click diterima field to accept program")
+    public void clickDiTerimaFieldToAcceptProgram() {
+        volunteerPage.clickDiTerimaFieldToAcceptProgram();
+    }
+
+    ///
+
+    @And("I click ditolak field to reject program")
+    public void clickDiTolakFielToRejectProgram() {
+        volunteerPage.clickDiTolakFieldToRejectProgram();
+    }
+
+    ///
+
     @And("I click list program field")
     public void iClickListProgramField() {
         volunteerPage.clickListProgramField();

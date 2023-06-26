@@ -12,6 +12,16 @@ Feature: As an user I want to see volunteer
     And I click permintaan pengajuan program field
     And I on the permintaan pengajuan page
 
+  Scenario: I want to see detail permintaan pengejuan on the volunteer page
+    Given I on the login page
+    When I click volunteer field
+    And I click permintaan pengajuan program field
+    And I on the permintaan pengajuan page
+    And I on the volunteer page
+    And I click detail field
+    Then I on the detail permintaan pengajuan page
+
+
   Scenario: I want to see list program on the volunteer page
     Given I on the login page
     When I click volunteer field
